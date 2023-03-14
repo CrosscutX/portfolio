@@ -85,7 +85,7 @@ h1 {
   align-items: center;
   min-width: 100%;
   height: 20rem;
-  background-image: url(assets/background1.pngzz);
+  background-image: url(assets/background1.png);
 }
 
 .skills h1 {
@@ -116,7 +116,7 @@ h1 {
   align-items: center;
   width: max(450px, 100%);
   height: 20rem;
-  background-color: rgba(17, 82, 100, 255);
+  background-image: url(assets/background2.png);
 }
 /*About End*/
 
@@ -128,7 +128,7 @@ h1 {
   align-items: center;
   width: max(450px, 100%);
   height: 20rem;
-  background-color: rgba(243, 87, 100, 255);
+  background-image: url(assets/background3.png);
 }
 /*Project End*/
 /*Footer Start*/
@@ -138,7 +138,7 @@ footer {
 }
 /*Footer End*/
 /*Media Queries*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 525px) {
   /*Adjusts the hero box for smaller screens*/
   .hero-text-container {
     width: 90%;
