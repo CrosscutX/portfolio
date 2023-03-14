@@ -16,13 +16,11 @@ h1 {
 .app {
   font-family: Inter, sans-serif, Arial, Helvetica;
   background-color: black;
-  width: 100%;
+  width: max(450px, 100%);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
-
+/*Hero Start*/
 .hero {
   display: flex;
   flex-direction: column;
@@ -31,7 +29,7 @@ h1 {
   background-image: url(./assets/hero-background.png);
   background-repeat: no-repeat;
   background-position: center center;
-  width: 100%;
+  width: max(450px, 100%);
   height: 45rem;
   padding: 50px;
 }
@@ -50,27 +48,44 @@ h1 {
   margin-bottom: 20px;
 }
 
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/*This is a fix for mobile, to make my name look better when Donahue overflows to the next line*/
+.hero-text-container h1 {
+  line-height: 60px;
+}
+
 .alex {
-  color: rgba(17, 82, 100, 255);
+  color: rgba(243, 87, 100, 255);
   font-family: Pacifico, Inter, sans-serif, Arial, Helvetica;
 }
 
 .emphasis {
-  color: black;
+  color: rgba(243, 87, 100, 255);
 }
 
 .react {
   font-weight: 600;
 }
+/*Hero End*/
 
+/*Skills Start*/
 .skills {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  min-width: 100%;
   height: 20rem;
-  background-color: rgb(4, 27, 44);
+  background-image: url(assets/background1.pngzz);
 }
 
 .skills h1 {
@@ -91,23 +106,42 @@ h1 {
 .skill-item img {
   height: 100px;
 }
+/*Skills End*/
 
+/*About Start*/
 .about-me {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  width: max(450px, 100%);
   height: 20rem;
   background-color: rgba(17, 82, 100, 255);
 }
+/*About End*/
 
+/*Project Start*/
 .projects {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  width: max(450px, 100%);
   height: 20rem;
   background-color: rgba(243, 87, 100, 255);
+}
+/*Project End*/
+/*Footer Start*/
+footer {
+  display: flex;
+  justify-content: center;
+}
+/*Footer End*/
+/*Media Queries*/
+@media screen and (max-width: 500px) {
+  /*Adjusts the hero box for smaller screens*/
+  .hero-text-container {
+    width: 90%;
+    height: 95%;
+  }
 }
