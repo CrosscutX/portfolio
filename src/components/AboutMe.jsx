@@ -7,10 +7,20 @@ export default function AboutMe() {
       <div className="about-me-left-container">
         <h1>Background</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-          quisquam tenetur saepe fugit dolorem atque eos aut reprehenderit a
-          facere, in, ex esse distinctio aspernatur nostrum nemo quod nesciunt
-          ipsam.
+          I'm Alex, an aspiring web developer and Stark State College grad with
+          an associate degree in Computer Science and Engineering.
+        </p>
+        <br></br>
+        <p>
+          I've been interested in tech for as long as I can remember, along with
+          the possibilites that the internet creates. Combine this with my
+          limitless desire to grow, and improve, and developing for the web was
+          a no brainer.
+        </p>
+        <br></br>
+        <p>
+          When I'm not working, I'm a fan of all things nerdy, like video games
+          and movies. You'll always find me catching the latest marvel movie!
         </p>
       </div>
       <div className="about-me-right-container">
