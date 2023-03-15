@@ -8,7 +8,8 @@ export default function AboutMe() {
         <h1>Background</h1>
         <p>
           I'm Alex, an aspiring web developer and Stark State College grad with
-          an associate degree in Computer Science and Engineering.
+          an associate degree in{" "}
+          <span className="emphasis">Computer Science and Engineering</span>.
         </p>
         <br></br>
         <p>
