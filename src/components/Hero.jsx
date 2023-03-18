@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="hero colored-container">
+    <div className="hero">
       <div className="hero-text-container">
         <h1>
           Hey, I'm <span className="alex">Alex Donahue</span>
@@ -15,7 +15,7 @@ export default function Hero() {
           I love bringing bringing websites to life with tools like{" "}
           <span className="emphasis react">React</span>
         </p>
-        <p className="emphasis react">donahue.alex@gmail.com</p>
+        <p className="emphasis react email">donahue.alex@gmail.com</p>
       </div>
     </div>
   );

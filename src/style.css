@@ -16,7 +16,9 @@ h1 {
 .app {
   font-family: Inter, sans-serif, Arial, Helvetica;
   background-color: black;
-  width: max(450px, 100%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -29,7 +31,7 @@ h1 {
   background-image: url(./assets/hero-background.png);
   background-repeat: no-repeat;
   background-position: center center;
-  width: 100%;
+  width: max(290px, 100%);
   height: 45rem;
   padding: 50px;
 }
@@ -83,7 +85,7 @@ h1 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  min-width: 100%;
+  width: max(290px, 100%);
   padding-top: 20px;
   height: 20rem;
   background-image: url(assets/background1.png);
@@ -121,7 +123,7 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: max(450px, 100%);
+  width: max(290px, 100%);
   height: 40rem;
   background-image: url(assets/background2.png);
 }
@@ -161,7 +163,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: max(450px, 100%);
+  width: max(290px, 100%);
   height: 60rem;
   background-image: url(assets/background3.png);
 }
@@ -182,7 +184,7 @@ h1 {
 
 .projects-container img {
   height: 250px;
-  width: 400px;
+  width: 95%;
   margin: 10px;
   border-radius: 7px;
 }
@@ -202,6 +204,7 @@ h1 {
 .project-text {
   display: flex;
   flex-direction: column;
+  width: 100%;
   align-items: center;
   padding: 10px;
 }
@@ -216,7 +219,8 @@ h1 {
 
 .button-container {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  width: 100%;
   margin-top: 20px;
   gap: 60px;
 }
@@ -224,9 +228,14 @@ h1 {
 .button-container a {
   color: white;
   text-decoration: none;
+  width: 40%;
 }
 
 .link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
   background-color: #0f5062;
   padding: 10px 50px;
   border-radius: 5px;
@@ -242,11 +251,31 @@ footer {
 }
 /*Footer End*/
 /*Media Queries*/
+
+@media screen and (max-width: 360px) {
+  /*Adjustment for small phone sizes so the skills logos don't overflow*/
+  .skill-item img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
 @media screen and (max-width: 525px) {
+  .hero {
+    height: 55rem;
+  }
+
   /*Adjusts the hero box for smaller screens*/
   .hero-text-container {
-    width: 90%;
+    width: 100%;
     height: 95%;
+  }
+  /*Adjusts the overflowing email text to look more appealing*/
+  .hero .hero-text-container .email {
+    font-size: 1rem;
+  }
+  .project-item {
+    width: 20rem;
   }
 }
 
@@ -258,7 +287,7 @@ footer {
 }
 @media screen and (max-width: 1000px) {
   .about-me {
-    height: 55rem;
+    height: 60rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -294,12 +323,14 @@ footer {
 }
 
 @media screen and (max-width: 1100px) {
+  /*Font size adjustment so about me doesn't overflow*/
   .about-me-left-container p {
     font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: 1400px) {
+  /*Projects container formatting adjustments for tablets and phones*/
   .projects {
     height: 170rem;
   }
