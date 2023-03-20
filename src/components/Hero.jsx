@@ -12,7 +12,7 @@ export default function Hero() {
           of <span className="emphasis">Ohio</span>
         </h2>
         <p>
-          I love bringing bringing websites to life with tools like{" "}
+          I love bringing websites to life with tools like{" "}
           <span className="emphasis react">React</span>
         </p>
         <p className="emphasis react email">donahue.alex@gmail.com</p>
