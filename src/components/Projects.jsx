@@ -2,6 +2,7 @@ import React from "react";
 import ProjectItem from "./ProjectItem";
 import Battleship from "../assets/battleship.png";
 import Quiz from "../assets/quizzical.png";
+import MoveList from "../assets/MovieList.png";
 
 export default function Projects() {
   //helper function used to keep my ProjectItem components more clean
@@ -40,7 +41,7 @@ export default function Projects() {
         <h1>Projects</h1>
       </div>
       <div className="projects-container">
-        <ProjectItem title="Movie Watch List" />
+        <ProjectItem image={MoveList} title="Movie Watch List" />
 
         <ProjectItem
           image={Battleship}
@@ -53,8 +54,8 @@ export default function Projects() {
           image={Quiz}
           title="Quizzical"
           description={descriptionHelper("quizzical")}
-          live={null}
-          github={null}
+          live={"https://comforting-gaufre-c12974.netlify.app/"}
+          github={"https://github.com/CrosscutX/quizzical"}
         />
       </div>
     </div>
