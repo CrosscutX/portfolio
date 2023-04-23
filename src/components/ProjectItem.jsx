@@ -8,10 +8,12 @@ export default function ProjectItem(props) {
         <h2>{props.title}</h2>
         <p>{props.description}</p>
         <div className="button-container">
-          <a className="link-button" href="google.com">
+          <a className="link-button" href={props.live}>
             Live
           </a>
-          <a className="link-button">Github</a>
+          <a className="link-button" href={props.github}>
+            Github
+          </a>
         </div>
       </div>
     </div>

@@ -28,7 +28,7 @@ export default function Projects() {
       );
     }
 
-    if (project === "game recommender") {
+    if (project === "Movie Watch List") {
       return;
     }
     return;
@@ -40,14 +40,14 @@ export default function Projects() {
         <h1>Projects</h1>
       </div>
       <div className="projects-container">
-        <ProjectItem title="Game Recommender" />
+        <ProjectItem title="Movie Watch List" />
 
         <ProjectItem
           image={Battleship}
           title="Battleship"
           description={descriptionHelper("battleship")}
-          live={null}
-          github={null}
+          live={"https://crosscutx.github.io/battleship/"}
+          github={"https://github.com/CrosscutX/battleship"}
         />
         <ProjectItem
           image={Quiz}
