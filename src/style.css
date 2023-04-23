@@ -183,7 +183,7 @@ h1 {
 }
 
 .projects-container img {
-  height: 250px;
+  height: 230px;
   width: 95%;
   margin: 10px;
   border-radius: 7px;
@@ -208,6 +208,10 @@ h1 {
   align-items: center;
   padding: 10px;
 }
+
+.project-text p {
+  font-size: 1.2rem;
+}
 .project-text h2 {
   margin-bottom: 10px;
 }
@@ -215,6 +219,10 @@ h1 {
 .link {
   color: rgba(243, 87, 100, 255);
   text-decoration: none;
+}
+
+.link:hover {
+  color: rgb(95, 28, 95);
 }
 
 .button-container {
