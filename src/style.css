@@ -330,7 +330,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
   /*Font size adjustment so about me doesn't overflow*/
   .about-me-left-container p {
     font-size: 1.2rem;
