@@ -6,6 +6,8 @@ import javascript from "../assets/javascript.png";
 import react from "../assets/react.png";
 import github from "../assets/github.png";
 import git from "../assets/git.png";
+import node from "../assets/node-js.png";
+import bootstrap from "../assets/Bootstrap_logo.png";
 
 export default function Skills() {
   return (
@@ -16,8 +18,10 @@ export default function Skills() {
         <SkillItem img={css} text="CSS" />
         <SkillItem img={javascript} text="Javascript" />
         <SkillItem img={react} text="React" />
+        <SkillItem img={bootstrap} text="Bootstrap" />
         <SkillItem img={github} text="Github" />
         <SkillItem img={git} text="Git" />
+        <SkillItem img={node} text="Node.js" />
       </div>
     </div>
   );
