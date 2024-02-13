@@ -1,8 +1,8 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
 import Battleship from "../assets/battleship.png";
-import Quiz from "../assets/quizzical.png";
-import MoveList from "../assets/MovieList.png";
+import Paws from "../assets/paws-awhile.jpg";
+import MovieList from "../assets/movie-list.jpg";
 
 export default function Projects() {
   //helper function used to keep my ProjectItem components more clean
@@ -11,47 +11,47 @@ export default function Projects() {
       return (
         <>
           A working imitation of battleship! This project was instrumental in
-          developing my ability to problem solve using javascript. Figuring out
-          the logic was no easy feat! Working through the process of selecting
-          things and using event listeners for something of this scope was eye
-          opening, and really led to me growing an appreciation for how React
-          simplifies these things.
+          developing my ability to problem solve using javascript. Working
+          through the process of selecting things and using event listeners for
+          something of this scope was eye opening, and really led to me growing
+          an appreciation for how React simplifies these things. Unit tests
+          created with Jest are used to ensure that the functionality remains
+          consistent.
         </>
       );
     }
 
-    if (project === "quizzical") {
-      const link = (
-        <a href="https://opentdb.com/api_config.php" className="link">
-          here
-        </a>
-      );
+    if (project === "paws") {
       return (
         <>
-          A simple quiz app using the open trivia api {link}. This app makes a
-          call to an api and then displays said questions from the api and
-          allows you to answer them and then check said answers. While working
-          on this I was able to further hone my skills with React, and I was
-          able to play around with a lot of new concepts that I had learned,
-          such as hooks and conditional rendering.
+          A freelance project done in collaboration with a client for his pet
+          memorial service. React/Vite are used on the front-end. I consulted
+          with said client in order to nail down project requirements, basically
+          handling all aspects of the project from design, coding, hosting, and
+          even the photography. The project is hosted using Netlify, and the
+          forms are integrated with the client's email using netlify's forms.
         </>
       );
     }
 
     if (project === "Movie Watch List") {
-      const matchaLink = (
-        <a href="https://github.com/MatchaSage" className="link">
-          MatchaSage
+      const omdbLink = (
+        <a href="https://www.omdbapi.com/" className="link">
+          OMBD
         </a>
       );
       return (
         <>
-          Project that I created with my friend and fellow learner {matchaLink}.
-          For this project we created a react app capable of fetching data from
-          a movie api and allowed users to store that information on their
-          machine using local storage. During this project I learned a lot about
-          the general workflow of React, and I got a lot of good practice using
-          git with another person on a team.
+          By far my largest project so far, a full-fledged full-stack
+          application built from the ground up using HTML, CSS, React and
+          Node.js. The MVC pattern is utilized on the backend to create an API
+          that calls from another api called {omdbLink}, and also handles our
+          database functionality using mongoDB. Throughout this project I worked
+          on all parts of the stack, ensuring that the functionality was
+          consistent across both the front-end and back-end, along with ensuring
+          the project was hosted properly using render.com.{" "}
+          <span className="emphasis">Note:</span>(The server takes 1-2 minutes
+          to spin up after your signup attempt).
         </>
       );
     }
@@ -65,11 +65,11 @@ export default function Projects() {
       </div>
       <div className="projects-container">
         <ProjectItem
-          image={MoveList}
+          image={MovieList}
           title="Movie Watch List"
           description={descriptionHelper("Movie Watch List")}
-          live={"https://rococo-crostata-bb9989.netlify.app"}
-          github={"https://github.com/MatchaSage/movie-list-"}
+          live={"https://movie-list-v2.netlify.app/signup"}
+          github={"https://github.com/CrosscutX/movie-list-2.0"}
         />
 
         <ProjectItem
@@ -80,11 +80,11 @@ export default function Projects() {
           github={"https://github.com/CrosscutX/battleship"}
         />
         <ProjectItem
-          image={Quiz}
-          title="Quizzical"
-          description={descriptionHelper("quizzical")}
-          live={"https://comforting-gaufre-c12974.netlify.app/"}
-          github={"https://github.com/CrosscutX/quizzical"}
+          image={Paws}
+          title="Paws Awhile"
+          description={descriptionHelper("paws")}
+          live={"https://pawsawhilepet.org/"}
+          github={"https://github.com/MatchaSage/pawsawhile"}
         />
       </div>
     </div>

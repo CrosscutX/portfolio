@@ -8,7 +8,7 @@ export default function Hero() {
           Hey, I'm <span className="alex">Alex Donahue</span>
         </h1>
         <h2>
-          I'm a <span className="emphasis">Front-End Developer</span> based out
+          I'm a <span className="emphasis">Full-Stack Developer</span> based out
           of <span className="emphasis">Ohio</span>
         </h2>
         <p>

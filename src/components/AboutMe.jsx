@@ -7,8 +7,8 @@ export default function AboutMe() {
       <div className="about-me-left-container">
         <h1>Background</h1>
         <p>
-          I'm Alex, an aspiring web developer and Stark State College grad with
-          an associate degree in{" "}
+          I'm Alex, a web developer and Stark State College grad with an
+          associate degree in{" "}
           <span className="emphasis">Computer Science and Engineering</span>.
         </p>
         <br></br>
