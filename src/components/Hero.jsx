@@ -8,12 +8,10 @@ export default function Hero() {
           Hey, I'm <span className="alex">Alex Donahue</span>
         </h1>
         <h2>
-          I'm a <span className="emphasis">Full-Stack Developer</span> based out
-          of <span className="emphasis">Ohio</span>
+          I'm a <span className="emphasis">Comp-Sci Student</span> studying at <span className="emphasis">Kent State</span>
         </h2>
         <p>
-          I love bringing websites to life with tools like{" "}
-          <span className="emphasis react">React</span>
+          I love creating cool stuff with code{" "}
         </p>
         <p className="emphasis react email">donahue.alex@gmail.com</p>
       </div>

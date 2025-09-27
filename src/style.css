@@ -138,11 +138,16 @@ h1 {
   align-self: flex-start;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   padding-left: 150px;
 }
 
+.p1 {
+  margin-bottom: 20px;
+}
+
 .about-me-left-container h1 {
+  align-self: center;
   margin-bottom: 10px;
 }
 
@@ -301,6 +306,10 @@ footer {
   .skills {
     min-height: 25rem;
   }
+
+  .about-me-left-container p{
+     font-size: 0.8rem !important;
+  }
 }
 @media screen and (max-width: 1000px) {
   .about-me {
@@ -308,9 +317,11 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
   }
 
   .about-me-left-container {
+    
     padding-left: 50px;
     padding-right: 50px;
     display: flex;
@@ -320,8 +331,12 @@ footer {
     align-self: center;
   }
 
-  .about-me-left-container p {
-    font-size: 1rem;
+  .about-me-left-container p{
+     font-size: 1rem;
+  }
+
+  .about-me-left-container h1{
+     font-size: 1.8rem !important;
   }
 
   .about-me-right-container {
@@ -341,9 +356,9 @@ footer {
 
 @media screen and (max-width: 1150px) {
   /*Font size adjustment so about me doesn't overflow*/
-  .about-me-left-container p {
+  /* .about-me-left-container p {
     font-size: 1.2rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 1400px) {
