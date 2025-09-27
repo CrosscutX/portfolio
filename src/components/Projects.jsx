@@ -2,7 +2,7 @@ import React from "react";
 import ProjectItem from "./ProjectItem";
 import Battleship from "../assets/battleship.png";
 import Paws from "../assets/paws-awhile.jpg";
-import MovieList from "../assets/movie-list.jpg";
+import MovieList from "../assets/MovieList.png";
 
 export default function Projects() {
   //helper function used to keep my ProjectItem components more clean
@@ -42,7 +42,8 @@ export default function Projects() {
       );
       return (
         <>
-          By far my largest project so far, a full-fledged full-stack
+        The most extensive project of the list. As the name implies this project allows the user to curate a list of movies that they'd like to watch and then filter through that list. HTML CSS, React and Node.js are used to make this functional. The MVC pattern is used on the backend to create our API that calls the database called {omdbLink}. Then we take their results and store it locally on your machine, so the app works for the device you use to create it, this is because I didn't use a database. Despite this limitation, this project taught me a lot!
+          {/* By far my largest project so far, a full-fledged full-stack
           application built from the ground up using HTML, CSS, React and
           Node.js. The MVC pattern is utilized on the backend to create an API
           that calls from another api called {omdbLink}, and also handles our
@@ -51,7 +52,7 @@ export default function Projects() {
           consistent across both the front-end and back-end, along with ensuring
           the project was hosted properly using render.com.{" "}
           <span className="emphasis">Note:</span>(The server takes 1-2 minutes
-          to spin up after your signup attempt).
+          to spin up after your signup attempt). */}
         </>
       );
     }
@@ -68,8 +69,8 @@ export default function Projects() {
           image={MovieList}
           title="Movie Watch List"
           description={descriptionHelper("Movie Watch List")}
-          live={"https://movie-list-v2.netlify.app/signup"}
-          github={"https://github.com/CrosscutX/movie-list-2.0"}
+          live={"https://rococo-crostata-bb9989.netlify.app/"}
+          github={"https://github.com/MatchaSage/movie-list-"}
         />
 
         <ProjectItem
