@@ -349,7 +349,8 @@ footer {
 
   .about-me-right-container img {
     height: 300px;
-    width: 300px;
+    width: 400px;
+    max-width: 170%;
     margin-bottom: 50px;
   }
 }

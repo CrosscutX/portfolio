@@ -1,5 +1,5 @@
 import React from "react";
-import Alex from "../assets/alex-pic.jpg";
+import Alex from "../assets/professional_Headshot.jpg";
 
 export default function AboutMe() {
   return (
